@@ -1,0 +1,169 @@
+#gameArea {
+    width: 1100px;
+    height: 600px;
+    position: relative;
+    background: rgb(143, 173, 232);
+    background-image: url('../img/Hintergrund_V1.gif'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+
+}
+
+
+
+#explosionReference {
+    width: 20px; 
+    height: 20px; 
+    left: 86%;    
+    top: 49%;     
+    background-color: red;
+    border: 1px solid black; 
+    z-index: 10000;
+     visibility: hidden; 
+
+}
+
+
+
+
+#conveyorBelt {
+    width: 100%;
+    height: 100px;
+    bottom: 150px;
+    position: absolute;
+    background: rgba(215, 215, 255, 0);
+ 
+}
+
+.bin {
+    width: 135px;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    line-height: 100px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background: rgba(128, 128, 128, 0.112);
+    color: white;
+    font-family:  Arial, Helvetica, sans-serif; 
+    font-weight: bold;
+    text-shadow: 1px 4px 10px rgba(0,0,0,1);
+    text-shadow: 1px 4px 10px rgba(0,0,0,1);
+}
+
+
+#trashBins {
+    display: flex;
+    justify-content: space-around; 
+    align-items: flex-end; 
+    height: 100px; 
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#binPaper { left: 133px; top: -94px; }
+#binPlastic { left: 820px; top: -94px; }
+#binGlass { left: 305px; top: -94px; }
+#binMetal { left: 650px; top: -94px; }
+#binOrganic { left: 475px; top: -94px; }
+
+
+.trashItem {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+   
+}
+
+#timer, #score {
+    position: absolute;
+    top: 50px;
+    font-size: 15px;
+    color: white;
+    font-family: 'Press Start 2P', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+   
+}
+
+#timer { right: 50px; }
+#score { left: 50px; }
+
+
+#soundToggleGame {
+    position: absolute;
+    top: 30px;
+    left: 512px;
+    opacity: 90%;
+}
+
+.trashItem {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+   
+}
+
+
+
+.trashItem[data-trashType="Paper"] { background-image: url('../img/paper.png'); }
+.trashItem[data-trashType="Plastic"] { background-image: url('../img/path_to_plastic_image.jpg'); }
+.trashItem[data-trashType="Glass"] { background-image: url('../img/path_to_glass_image.jpg'); }
+.trashItem[data-trashType="Metal"] { background-image: url('../img/path_to_metal_image.jpg'); }
+.trashItem[data-trashType="Organic"] { background-image: url('../img/path_to_organic_image.jpg'); }
+
+
+body {
+    overflow: hidden;
+}
+
+
+.explosion {
+    width: 80px; 
+    height: 80px; 
+}
+
+
+
+
+/*
+
+#gameArea {
+    width: 100vw;  
+    height: 100vh; 
+
+    position: relative;
+    background: rgb(143, 173, 232);
+}
+
+.bin {
+    width: 15vw; 
+    height: 15vh; 
+    max-width: 100px; 
+    max-height: 100px; 
+
+}
+
+
+@media (max-width: 800px) {
+    .bin {
+        width: 20vw;
+        height: 20vh;
+    }
+
+
+#gameArea {
+    width: 100vw; 
+    height: 70vh; 
+ 
+}
+}
+*/
+
+

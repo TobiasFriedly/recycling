@@ -1,0 +1,121 @@
+body {
+    background: rgb(143, 173, 232);
+}
+
+
+
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Press Start 2P', cursive; 
+    background-color: #000; 
+    color: #fff; 
+}
+
+.game-over-container {
+    
+    text-align: center; 
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.game-over-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.score {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.play-again-btn, .btn-primary {
+    display: inline-block; 
+    width: auto; 
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin: 10px 0; 
+    clear: both; 
+}
+
+.play-again-btn:hover {
+    background-color: #005f6a; 
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #00ba73;
+}
+
+.btn-primary:hover {
+    background-color: #006a2c; 
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 600px) {
+    .game-over-title, .score {
+        font-size: 1.2rem;
+    }
+
+    .play-again-btn {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
+
+
+
+
+
+
+#scoreForm {
+    margin: 20px auto;
+    text-align: center;
+}
+
+#scoreForm input[type="text"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 60%;
+    max-width: 300px;
+    font-family: 'Press Start 2P', cursive;
+    color: #000;
+}
+
+#scoreForm button {
+    background-color: #ff8c8c; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#scoreForm button:hover {
+    background-color: #d76363; 
+}
+
+
+@media screen and (max-width: 600px) {
+    #scoreForm input[type="text"], #scoreForm button {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+        width: 70%;
+    }
+}

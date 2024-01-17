@@ -1,0 +1,217 @@
+/*body {
+    background: rgb(143, 173, 232);
+}
+
+
+
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Press Start 2P', cursive; 
+    background-color: #000; 
+    color: #fff; 
+}
+
+.start {
+    text-align: center; 
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+
+.btn {
+    display: inline-block;
+    background-color: #008CBA; 
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #005f6a; 
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 600px) {
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
+*/
+
+
+
+.btn-success {
+    background-color: #6fb56f !important;
+    border-color: #6fb56f !important;
+}
+
+.btn-success:hover {
+    background-color: #507450 !important;
+    border-color: #9fb19f !important;
+}
+
+.btn-primary {
+    background-color: #558abf !important;
+    border-color: #558abf !important;
+}
+
+.btn-primary:hover {
+    background-color: #345b8f !important;
+    border-color: #92a9c7 !important;
+}
+
+.btn-warning {
+    background-color: #ffcd87 !important;
+    border-color: #ffcd87 !important;
+}
+
+.btn-warning:hover {
+    background-color: #e1c199 !important;
+    border-color: #e1c199 !important;
+}
+
+.btn-info {
+    background-color: rgb(82, 158, 181) !important; 
+    border-color: rgb(82, 158, 181) !important;
+}
+
+.btn-info:hover {
+    background-color: #91b9c7 !important;
+    border-color: #91b9c7 !important;
+}
+
+
+
+
+#homeConveyorBelt {
+    width: 100%;
+    height: 60px; 
+    position: absolute;
+    bottom: 100px; 
+    background: rgba(0, 0, 0, 0.2); 
+    background-image: url('../img/cropped_cbelt3.gif'); 
+    background-repeat: repeat-x; 
+    background-size: 100% auto;
+    overflow: hidden;
+    background-size: contain;
+    background-repeat: repeat;
+
+}
+
+
+
+@media screen and (max-height: 760px) { 
+    #homeConveyorBelt {
+        bottom: 10px;
+    }
+}
+
+@media screen and (max-height: 660px) { 
+    #homeConveyorBelt {
+        display: none;
+    }
+}
+
+
+
+.trashItem {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+.maincontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%; 
+
+    background-image: url('../img/Menu.png'); 
+    background-repeat: repeat;
+}
+
+.container {
+    text-align: center; 
+}
+
+.btn-group-vertical {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    transform: translateX(-10px);
+    width: 50%; 
+}
+
+
+@media (max-width: 768px) {
+    .btn-group-vertical {
+
+        width: 90%;
+        transform: translateX(-0px);
+    }
+    .btn-group-vertical button {
+        width: 90%; 
+        margin: 0 auto; 
+        
+    }
+}
+
+
+
+
+
+
+
+
+.btn {
+    margin: 10px;
+    font-family: 'Press Start 2P', Arial, sans-serif;    
+}
+
+.modal-body {
+    font-family:  Arial, sans-serif;
+    color: #333;
+}
+
+.modal-body h4 {
+    font-family: Arial, sans-serif;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.modal-body p {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+h1 {
+    font-family: 'Press Start 2P', Arial, sans-serif;
+}

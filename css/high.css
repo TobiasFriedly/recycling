@@ -1,0 +1,37 @@
+body{
+    background-image: url('../img/Menu.png');
+    background-repeat: repeat;
+}
+
+
+.maincontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Press Start 2P', Arial, sans-serif;
+}
+
+.backbutton{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Press Start 2P', Arial, sans-serif;
+}
+
+.titel{
+    font-family: 'Press Start 2P', Arial, sans-serif;
+    text-align: center;
+}
+.btn {
+    margin: 10px;
+    font-family: 'Press Start 2P', Arial, sans-serif;
+}
+
+.table{
+    font-family: 'Press Start 2P', Arial, sans-serif;
+}
