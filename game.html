@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Recycling Game</title>
+    <link rel="icon" type="image/x-icon" href="favicon-32.ico" sizes="any">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#ff8c8c">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+        <audio id="backgroundMusic" src="sounds/background_recycle_full_leiser.mp3" loop></audio>
+    <div id="gameArea">
+        <div class="d-flex justify-content-center">
+            <div id="conveyorBelt"></div>
+            <div id="timer">Zeit: 60s</div>
+            <div id="score">Punkte: 0</div>
+                    <button id="soundToggleGame" class="sound-button">
+            <img id="soundIcon" src="img/off.png" alt="Sound On/Off"/>
+        </button>
+        </div>
+        <div id="trashBins">
+            <div class="bin" id="binPaper">Papier</div>
+            <div class="bin" id="binPlastic">Plastik</div>
+            <div class="bin" id="binGlass">Glas</div>
+            <div class="bin" id="binMetal">Metall</div>
+            <div class="bin" id="binOrganic">Grünabfälle</div>
+        </div>
+        <div id="explosionReference" style="position: absolute;"></div>
+    </div>
+
+
+    <script>
+        
+        document.getElementById('soundToggleGame').addEventListener('click', function() {
+            var audio = document.getElementById('backgroundMusic');
+            var soundIcon = document.getElementById('soundIcon');
+            if (audio.paused) {
+                audio.play();
+                soundIcon.src = 'img/on.png'; 
+            } else {
+                audio.pause();
+                soundIcon.src = 'img/off.png'; 
+            }
+        });
+    </script>
+
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.5/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

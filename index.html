@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang=de dir="ltr">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">   -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recycling Game</title>
+    <link rel="icon" type="image/x-icon" href="favicon-32.ico" sizes="any">
+    <link rel="stylesheet" href="css/start.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+<meta name="theme-color" content="#ff8c8c">
+
+</head>
+
+<body>
+    <div class="maincontainer">
+    <div class="container text-center">
+        <h1>Recycling Game</h1>
+        <div class="btn-group-vertical mt-4">
+            <button id="startGame" class="btn btn-success btn-lg">Game starten</button>
+            <button id="instructions" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#instructionsModal">Spielanleitung</button>
+            <button id="sdgInfo" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#sdgModal">UN Sustainable Goals</button>
+
+            <button id="highscore" class="btn btn-info btn-lg">Highscores</button>
+            <!--<button id="closeGame" class="btn btn-danger btn-lg">Spiel schliessen</button>-->
+            <button id="soundToggle" class="btn btn-dark btn-lg">Musik ausschalten</button>
+
+
+
+        </div>        
+    </div>
+
+
+    <div class="modal fade" id="sdgModal" tabindex="-1" role="dialog" aria-labelledby="sdgModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="sdgModalLabel">UN Sustainable Development Goals</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4>UN-Nachhaltigkeitsziele und Recycling in der Schweiz</h4>
+                    <p><strong>UN-Nachhaltigkeitsziele (SDGs):</strong> Die UN-Nachhaltigkeitsziele (SDGs) konzentrieren sich auf globale Herausforderungen, einschließlich Umwelt und Nachhaltigkeit. Ziel 12, "Verantwortungsvolle Konsum- und Produktionsmuster", ist besonders relevant für das Recycling. Dieses Ziel strebt nachhaltige Konsum- und Produktionsmuster an und betont die Bedeutung der Abfallvermeidung durch Prävention, Reduzierung, Recycling und Wiederverwendung. Es fördert die Übernahme nachhaltiger Praktiken und die Integration von Abfallmanagementprinzipien in unser tägliches Leben. Durch die Konzentration auf das Recycling tragen wir zum Erhalt natürlicher Ressourcen, zur Reduzierung von Verschmutzung und zur Förderung einer nachhaltigen Zukunft bei.</p>
+                
+                    <p><strong>Recycling in der Schweiz:</strong> 
+                        In der Schweiz wird das Recycling sehr ernst genommen und ist ein integraler Bestandteil des Umweltbewusstseins. Die Bürger trennen aktiv Müll und recyceln Materialien wie Papier, Karton, Glas, Metall, PET-Flaschen und Aluminium. Viele Gemeinden bieten spezielle Sammelstellen, und es gibt Rücknahmesysteme für bestimmte Produkte. Die Schweiz hat auch ein ausgeklügeltes System für die Entsorgung und Wiederverwendung von Elektrogeräten, Batterien und organischen Abfällen. Diese Bemühungen tragen wesentlich zur Reduzierung von Abfall und zur Schonung natürlicher Ressourcen bei.</p>
+                </div>
+                
+                
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="modal fade" id="instructionsModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">Spielanleitung</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            <div class="modal-body">
+                    <strong>Spielziel:</strong> Sortiere verschiedene Abfallarten in die richtigen Recyclingbehälter (Papier, Plastik, Glas, Metall, Grünabfall) innerhalb eines Zeitlimits.<br>
+                    <strong>Smartphone drehen:</strong> Drehe dein Smartphone sobald du den "Game starten" gedrückt hast. Richte das Spiel im Fenster aus.<br><br>
+                    <strong>Spielanleitung:</strong>
+                    <ol>
+                        <li><strong>Ziehen und Ablegen:</strong> Bewege die Abfallartikel per Drag-and-Drop in die passenden Behälter.</li>
+                        <li><strong>Punktesystem:</strong> Erziele Punkte für jedes korrekt sortierte Element. Falsches Sortieren führt zu Punktabzügen.</li>
+                        <li><strong>Zeitlimit:</strong> Erziele Bonuszeit für jedes korrekt sortierte Element. Beim falschen Sortieren wird deine Zeit reduziert.</li>
+                        <li><strong>Level:</strong> Mit fortschreitendem Spiel erhöht sich die Schwierigkeit durch mehr Artikel und schnelleres Tempo.</li>
+                    </ol>
+                    Viel Spass beim Recyceln und versuche, die Uhr zu schlagen, um eine hohe Punktzahl zu erreichen!
+                </div>
+                
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div id="homeConveyorBelt" class="conveyorBelt"></div>
+    <script>
+
+
+
+function updateButton() {
+    const soundEnabled = localStorage.getItem('soundEnabled') === 'true';
+    const button = document.getElementById('soundToggle');
+    button.textContent = soundEnabled ? 'Musik ausschalten' : 'Musik einschalten';
+}
+
+
+if (localStorage.getItem('soundEnabled') === null) {
+    localStorage.setItem('soundEnabled', 'true'); 
+}
+
+updateButton();
+
+
+document.getElementById('soundToggle').addEventListener('click', function() {
+   
+    const soundEnabled = localStorage.getItem('soundEnabled') === 'true';
+    localStorage.setItem('soundEnabled', !soundEnabled);
+
+
+    updateButton();
+});
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+
+
+
+
+    startSpawningItemsForHomeScreen();
+
+
+
+    function startSpawningItemsForHomeScreen() {
+
+        createItemForHomeConveyorBelt();
+
+        setTimeout(startSpawningItemsForHomeScreen, 3000); //hier anpassen
+    }
+    
+    function createItemForHomeConveyorBelt() {
+        const homeConveyorBelt = document.getElementById('homeConveyorBelt');
+        if (!homeConveyorBelt) return;
+    
+        let item = document.createElement('div');
+        item.className = 'trashItem';
+        item.dataset.trashType = getRandomTrashType();
+        item.style.backgroundImage = getBackgroundImageForType(item.dataset.trashType);
+        homeConveyorBelt.appendChild(item);
+    
+        item.addEventListener('mousedown', onItemMouseDown);
+        item.addEventListener('touchstart', onTouchStart);
+    
+        let position = 0;
+        item.style.left = position + 'px';
+    
+        const interval = setInterval(() => {
+            position += 2; // SPeed anpassen
+            if (position > homeConveyorBelt.offsetWidth) {
+                clearInterval(interval);
+                item.remove();
+            } else {
+                item.style.left = position + 'px';
+            }
+        }, 10);
+        item.movementInterval = interval;
+    }
+    
+    function getRandomTrashType() {
+        const trashTypes = ['Paper', 'Plastic', 'Glass', 'Metal', 'Organic'];
+        const randomIndex = Math.floor(Math.random() * trashTypes.length);
+        return trashTypes[randomIndex];
+    }
+    
+    
+    
+    function getBackgroundImageForType(trashType) {
+        const imagePaths = {
+            Paper: ['img/paper.png','img/Papiertuete.png','img/Altpapier.png' ],
+        Plastic: ['img/plastic.png', 'img/PlastikSack.png' ],
+        Glass: ['img/glass.png', 'img/Martini.png', 'img/Trinkglas.png' ],
+        Metal: ['img/metal.png', 'img/UFO.png', 'img/Schwert.png'],
+        Organic: ['img/organic.png', 'img/Fisch.png', 'img/Apfel.png', 'img/Pizza.png', 'img/Apfel1.png']
+        };
+        
+    
+  
+        const randomIndex = Math.floor(Math.random() * imagePaths[trashType].length);
+        const selectedImagePath = imagePaths[trashType][randomIndex];
+    
+        return `url('${selectedImagePath}')`;
+    }
+    
+    
+    
+    
+    function onItemMouseDown(event) {
+        if (event.target.classList.contains('trashItem')) {
+            startDraggingItem(event.target, event.clientX, event.clientY);
+        }
+    }
+    
+    function onTouchStart(event) {
+        if (event.target.classList.contains('trashItem')) {
+            const touchLocation = event.targetTouches[0];
+            startDraggingItem(event.target, touchLocation.pageX, touchLocation.pageY);
+        }
+    }
+    
+    function startDraggingItem(item, posX, posY) {
+        clearInterval(item.movementInterval);
+    
+        draggedItem = item;
+        draggedItem.style.position = 'absolute';
+        draggedItem.style.zIndex = '1000';
+        document.body.appendChild(draggedItem);
+        moveDraggedItemToPosition(posX, posY);
+    }
+    
+    function moveDraggedItemToPosition(posX, posY) {
+        draggedItem.style.left = `${posX - draggedItem.offsetWidth / 2}px`;
+        draggedItem.style.top = `${posY - draggedItem.offsetHeight / 2}px`;
+    }
+    
+    document.addEventListener('mousemove', (event) => {
+        if (draggedItem) {
+            moveDraggedItemToPosition(event.clientX, event.clientY);
+        }
+    });
+    
+    document.addEventListener('touchmove', (event) => {
+        if (draggedItem) {
+            const touchLocation = event.targetTouches[0];
+            moveDraggedItemToPosition(touchLocation.pageX, touchLocation.pageY);
+        }
+    }, { passive: false });
+    
+    document.addEventListener('mouseup', dropItem);
+    document.addEventListener('touchend', dropItem);
+    
+    function dropItem() {
+        if (draggedItem) {
+            showExplosionAtItem(draggedItem);
+            draggedItem.remove();
+            draggedItem = null;
+        }
+    }
+    
+    
+    
+    function showExplosionAtItem(item) {
+        const explosion = document.createElement('img');
+        explosion.src = 'img/explosion.gif'; 
+        explosion.className = 'explosion';
+        explosion.style.position = 'absolute';
+        explosion.style.left = item.style.left;
+        explosion.style.top = item.style.top;
+        explosion.style.zIndex = '1001';
+        explosion.style.width = '80px'; 
+        explosion.style.height = '80px';
+    
+        document.body.appendChild(explosion);
+    
+     
+        const explosionSound = new Audio('sounds/explosion_louder.mp3');
+        explosionSound.play();
+    
+        setTimeout(() => {
+            explosion.remove();
+        }, 600); 
+    }
+    
+
+
+
+
+
+});
+
+
+
+
+
+
+
+
+
+    </script>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.5/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
+
+
